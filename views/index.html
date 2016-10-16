@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><%= title %></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/favicon.jpg">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+        <style>
+            html{
+                font-family: '微软雅黑';
+            }
+            .bdsharebuttonbox a{
+                width: 20px;
+                height: 20px;
+                
+            }
+            .sendMessage{
+                border: 0;
+                border-radius:　10px;
+                padding: 15px;
+            }
+            .sendMessage i{
+                margin-right: 10px;
+            }
+            .alertContent{
+                color: #000000;
+                padding: 50px;
+                font-family: '微软雅黑';
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div id="home" class="carousel slide carousel-fade" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+                <div class="item active">
+                    <div class="item-1"></div>
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                                <h2>成长</h2>
+                                <p><strong><span class="green">成长</span><span class="yellow">@</span></strong>不知不觉中，也有了面临而立之年的困扰，已经不允许你不成熟，当你无力把握命运中的某种爱，某些事，学会放手。给自己一个全新的开始，只要信心在，勇气在，希望就在。</p>
+                                <a href="/circle" class="button default">living circle</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-2"></div>
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                                <h2>你若盛开，清风自来</h2>
+                                <p>做自己喜欢做的事，与自己喜欢的人在一起。牵手去想去的地方，邂逅最美的事物。<br/><strong><span class="green">你若盛开，清风自来。</span><span class="yellow">心若浮沉，浅笑安然</span></strong></p>
+                                <a href="/message" class="button default" style="font-family: '微软雅黑';">留言板</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-3"></div>
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                                <h2>旅行的意义</h2>
+                                <p><strong><span class="green">旅行</span><span class="yellow">@</span></strong>真正的世界不再你的书中，而在外面的世界。告别赶路、拍照、拥挤、疲惫的形式旅游，拿着自己的地图，寻找自己的路。出发！最美的风景，永运在路上。</p>
+                                <a href="/blog" class="button default">BLOG</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-4"></div>
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                                <h2>记录美好</h2>
+                                <p>希望时光再慢一些，这样可以去体味生活中细微处的美好。用最简单的工具留住被遗忘的瞬间，手中的相机记录生活的最优雅轨迹。</p>
+                                <a href="#contact" class="button default">Let's talk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDER OPTIONS -->
+            <div class="slider-options">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4 slider-nav">
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#home" role="button" data-slide="prev">
+                                <span class="fa fa-angle-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#home" role="button" data-slide="next">
+                                <span class="fa fa-angle-right"></span>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#home" data-slide-to="0" class="active"></li>
+                                <li data-target="#home" data-slide-to="1"></li>
+                                <li data-target="#home" data-slide-to="2"></li>
+                                <li data-target="#home" data-slide-to="3"></li>
+                            </ol>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 text-right col-xs-4">
+                            <a href="#" id="scroll-to-content" class="go-down"><i class="fa fa-angle-down"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Carousel -->
+
+
+        <nav id="navigation">
+            <div class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="/"><%= siteName %></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#home" class="current">首页</a></li>
+                            <li><a href="#about">关于我</a></li>
+                            <li><a href="#gallery">相册</a></li>
+                            <li><a href="#contact">联系我</a></li>
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
+                </div><!--/.container -->
+            </div><!--navbar-default-->
+        </nav><!--navigation section end here-->
+
+
+        <section id="about" class="page-section first-section">
+            <div class="container">
+                <div class="row page-heading">
+                    <div class="col-md-8 col-sm-8">
+                        <h3 class="page-title">关于我</h3>
+                        <p class="page-subtitle">LEARN MORE ABOUT ME AND MY EXPERIENCE</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 hidden-xs page-icon-holder">
+                        <p class="page-icon"><i class="fa fa-user"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="profile-image">
+                            <img src="img/9.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="profile-content">
+                            <h4>Freeboy</h4>
+                            <span>前端工程师</span>
+                            <p>本人应届毕业生，就读于西南科技大学，信息安全专业。一个乐观开朗，朝气蓬勃的boy。</p>
+                            <!--<ul class="social-icons">
+                                <li><a href="#" class="fa fa-qq"></a></li>
+                                <li><a href="#" class="fa fa-weibo"></a></li>
+                                <li><a href="#" class="fa fa-weixin"></a></li>
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                            </ul>-->
+                            <div class="bdsharebuttonbox" style="margin-top: 20px;">  
+                                    <a href="#" class="bds_more" data-cmd="more"></a>  
+                                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>  
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>  
+                                    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>  
+                                    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>  
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>  
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="my-skills">
+                            <h4>My Skills</h4>
+                            <p>接触前端两年时间，掌握基本前端技术。参与过一些项目，在项目中提升自己，熟悉常用的前端框架。</p>
+                            <ul class="progess-bars">
+                                <li>
+                                    <span>html,css,js 70%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>jQuery 70%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>node 60% （本站后台及使用node）</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="gallery" class="page-section">
+            <div class="container">
+                <div class="row page-heading">
+                    <div class="col-md-8 col-sm-8">
+                        <h3 class="page-title">我的相册</h3>
+                        <p class="page-subtitle" style=";">记录生活的点点滴滴</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 hidden-xs text-right">
+                        <p class="page-icon"><i class="fa fa-camera"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gallery-holder">
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="img/1.jpg" alt="">
+                                <div class="hover">
+                                    <a href="#" class="fa fa-plus"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="img/2.jpg" alt="">
+                                <div class="hover">
+                                    <a href="#" class="fa fa-plus"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="img/3.jpg" alt="">
+                                <div class="hover">
+                                    <a href="#" class="fa fa-plus"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="img/4.jpg" alt="">
+                                <div class="hover">
+                                    <a href="#" class="fa fa-plus"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="img/5.jpg" alt="">
+                                <div class="hover">
+                                    <a href="#" class="fa fa-plus"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="img/6.jpg" alt="">
+                                <div class="hover">
+                                    <a href="#" class="fa fa-plus"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="img/7.jpg" alt="">
+                                <div class="hover">
+                                    <a href="#" class="fa fa-plus"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="img/8.jpg" alt="">
+                                <div class="hover">
+                                    <a href="#" class="fa fa-plus"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <section id="contact" class="page-section">
+            <div class="container">
+                <div class="row page-heading">
+                    <div class="col-md-8 col-sm-8">
+                        <h3 class="page-title">联系我</h3>
+                        <p class="page-subtitle">期待你的信息，随时发送消息。<span style="font-weight: bold;">  在右下方可查看留言板哦！<span></p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 hidden-xs text-right">
+                        <p class="page-icon"><i class="fa fa-envelope"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="row">
+                            <form action="/message/send" method="post"  class="contact-form sendForm">
+                                <fieldset class="col-md-4 col-sm-6 col-xs-12">
+                                    <input type="text" id="name" name="name" placeholder="名字...">
+                                </fieldset>
+                                <fieldset class="col-md-4 col-sm-6 col-xs-12">
+                                    <input type="email" id="email" name="email" placeholder="Email...">
+                                </fieldset>
+                                <fieldset class="col-md-4 col-sm-12 col-xs-12">
+                                    <input type="text" id="subject" name="subject" placeholder="主题...">
+                                </fieldset>
+                                <fieldset class="col-md-12 col-sm-12 col-xs-12">
+                                    <textarea name="message" id="message" cols="30" rows="6" placeholder="信息..."></textarea>
+                                </fieldset>
+                                <fieldset class="col-md-12 col-sm-12 col-xs-12">
+                                    <!--<div class="" style="background: #e46948;width: 110px;height: 50px;border-radius: 5px;padding: 5px;font-size: 18px;">
+                                        <i class="fa fa-send"></i>
+                                        <input type="submit" class="button default sendMessage" value="现在发送">
+                                    </div>-->
+                                    <button style="border-radius: 5px;" type="submit" class="button default sendMessage" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="fa fa-send"></i>现在发送</button>
+                                    <div class="formAlert"></div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="contact-info">
+                            <h4>My Contact Information</h4>
+                            <p><i class="fa fa-map-marker"></i> &nbsp;&nbsp;绵阳</p>
+                            <p><i class="fa fa-phone"></i> &nbsp;&nbsp;17744311727</p>
+                            <p><i class="fa fa-envelope"></i> &nbsp;&nbsp;1104729815@qq.com</p>
+                            <p><a href="/message"><i class="fa fa-comments fa-2x"></i> &nbsp;&nbsp;<span style="font-size: 16px;margin-bottom: 6px;">查看留言板</span></a></p>
+                            <ul class="social-icons">
+                                <li><a href="tencent://message/?v=3&uin=1104729815&site=qq&menu=yes" class="fa fa-qq"></a></li>
+                                <li><a href="#" class="fa fa-weibo"></a></li>
+                                <li><a href="#" class="fa fa-weixin"></a></li>
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <!--<li><i class="fa fa-spinner fa-3x fa-spin" style="color: #F0AD4E"></i></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="text-center">
+                    <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+                    <p class="copyright-text"> &copy; 2016 <%= siteName %>  蜀ICP16027276号</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/min/plugins.min.js"></script>
+        <script src="/js/min/main.min.js"></script>
+        <script src="/js/sendmessage.js"></script>
+        <script>  
+            window._bd_share_config={  
+                "common":{  
+                "bdPopTitle":"关注这个主页",  
+                "bdSnsKey":{},  
+                "bdText":"欢迎关注主页,地址caoshengxiang.top",   
+                "bdMini":"2",  
+                "bdMiniList":false,  
+                "bdPic":"http://caoshengxiang.top", /* 此处填写要分享图片地址 */  
+                "bdStyle":"0",  
+                "bdSize":"16"  
+                },  
+                "share":{}  
+            };  
+            with(document)0[  
+                    (getElementsByTagName('head')[0]||body).  
+                    appendChild(createElement('script')).  
+                    src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)  
+                ];  
+            </script> 
+        
+    </body>
+</html>

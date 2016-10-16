@@ -1,0 +1,106 @@
+html,
+body {
+  font-family: "微软雅黑";
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  background: #c9c8c4;
+}
+.page {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.page .imgbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: url(../img/body_bg_comment.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+.page .page-left {
+  width: 600px;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 200px;
+  background: #f2f2f5;
+}
+.page .page-left .comment_message {
+  background: #fff;
+}
+.page .page-left .comment_message .messageItem {
+  background: #fff;
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+.page .page-left .comment_message .subject {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+.page .page-left .comment_message .name,
+.page .page-left .comment_message .email,
+.page .page-left .comment_message .time {
+  font-size: 12px;
+  color: #808080;
+}
+.page .page-left .comment_message .Interaction {
+  margin-top: 5px;
+}
+.page .page-left .comment_message .Interaction a {
+  color: #000000;
+  margin-right: 30px;
+}
+.page .page-left .comment_message .Interaction a:hover {
+  cursor: pointer;
+  color: red;
+  text-decoration: none;
+}
+.page .page-left .comment_message .Interaction a span {
+  padding-left: 5px;
+}
+.page .page-left .list_box .row {
+  width: 600px;
+  margin-left: 0px;
+}
+.page .page-left .list_box .comment-box {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.page .page-left .list_box .comment-box .commentMessage {
+  max-width: 580px;
+  min-width: 580px;
+  height: 80px;
+}
+.page .page-left .list_box .comment-box .commentBtn {
+  float: right;
+  margin-right: 10px;
+  padding: 8px 20px;
+}
+.page .page-left .list_box .list_ul .list_li {
+  padding: 10px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+.page .page-left .list_box .list_ul .list_li .time_praise {
+  margin-top: 10px;
+}
+.page .page-left .list_box .list_ul .list_li .time_praise .clickCommentPraise {
+  margin-left: 40px;
+}
+.page .page-left .list_box .list_ul .list_li .time_praise .clickCommentPraise .commentPraiseNum {
+  margin-left: 6px;
+}
+.page .page-left .list_box .list_ul .list_li .time_praise .clickCommentPraise:hover {
+  color: red;
+  cursor: pointer;
+}
+.page .page-left .list_box .list_ul .list_li .commentFormUser {
+  color: #ef340f;
+  font-weight: bold;
+}
+/*# sourceMappingURL=comments.css.map */

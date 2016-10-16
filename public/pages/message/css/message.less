@@ -1,0 +1,122 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "微软雅黑";
+}
+.bg{
+    width: 100%;
+    min-height: 100%;
+    background: url(../img/body_repeat.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding: 0;
+    margin: 0;            
+}
+
+
+
+@media screen and (min-width: 970px) {
+    .postMessage{
+        width: 970px; 
+    }
+    .sendMessage{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .postMessage{
+        width: 100%; 
+        
+    }
+    .sendMessage{
+        width: 100%;
+    }
+}
+.postMessage{
+    margin: 70px auto 0px auto;
+    min-width: 970px;
+    .messageItem{
+        background: #fff;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .subject{
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+    }
+    .name, .email, .time{
+        font-size: 12px;
+        color: #808080;
+    }
+    .Interaction{
+        margin-top: 5px;
+        .theFloor{
+            margin-right: 30px;
+        }
+        a{
+            color: #000000;
+            margin-right: 30px;
+            span{
+                padding-left: 5px;
+            }
+        }
+        a:hover{
+            cursor: pointer;
+            color: red;
+            text-decoration: none;
+        }
+    }
+}
+
+.leaveMessage{
+    margin: 0px 0 20px 0;
+    min-width: 970px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    .leaveMsgRow{
+        margin: 0;
+        padding: 0;
+        width: 970px;
+        
+        .contact-form{
+            fieldset{
+                margin-bottom: 10px;
+            }
+            input{
+                width: 90%;
+                padding: 5px
+            }
+            textarea{
+                width:100%;
+                max-width: 100%;
+                
+            }
+            
+            .sendMessage{
+                border-radius: 5px;
+                width: 50%;
+                height: 40px;
+                border: 0;
+                background: limegreen;
+                color: #fff;
+                font-weight: bold;
+                font-size: 16px;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            .sendMessage:hover{
+                color: #D9534F;
+            }
+        }
+    }
+}
+
+.alertContent{
+    color: #000000;
+    padding: 50px;
+    font-family: '微软雅黑';
+    font-weight: bold;
+}
+

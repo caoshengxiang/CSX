@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主題：<%= theMsg.subject %></title>
+		<link rel="shortcut icon" href="/img/favicon.jpg">
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/font-awesome.css"/>
+		<link rel="stylesheet" href="/pages/message/css/comments.css"/>
+	</head>
+	<body>
+	    <div class="page container">
+	        <% include ../common/header.html%>
+	        <div class="imgbg"></div>
+	        <div class="page-left">
+        	    <div class="comment_message">
+                    <div class="row messageItem" data-id="<%= theMsg._id %>">
+                        <div class="col-md-12 col-sm-12 subject">主题: <span class="subShow"><%= theMsg.subject %></span></div>
+                        <div class="col-md-4 col-sm-12 name"><%= theMsg.name %></div>
+                        <div class="col-md-3 col-sm-12 email"><%= theMsg.email %></div>
+                        <div class="col-md-3 col-sm-12 time"><%= theMsg.time %></div>
+                        <div class="col-md-12 col-sm-12 message"><%= theMsg.message %></div>
+                        <div class="col-md-12 col-sm-12 Interaction">
+                            <a class="praiseBTN"><i class="fa fa-thumbs-o-up fa-lg"></i><span><%= theMsg.praise %></span></a>
+                            <a class="commentsBTN"><i class="fa fa-comments-o fa-lg"></i><span class="commentsNum"><%= theMsg.comments.length %></span></a>
+                        </div>
+                    </div>
+                </div>
+        	    <div class="list_box">
+                    <div class="comment-box row">
+                        <textarea name="commentMessage" id="commentMessage" class="commentMessage" placeholder="我也來评论..."></textarea>
+                        <button class="commentBtn">评论</button>
+                    </div>
+                    <div class="list_ul row">
+                        <% for(var i = theMsg.comments.length-1; i >= 0; i--){
+                            var com =  theMsg.comments[i];   
+                        %>
+                        <div comment-id="<%= com.id %>" class="list_li S_line1 clearfix">
+                             <div class="col-md-12"><span class="commentFormUser"><%= com.username %>: </span><span class="userCommentMsg"><%= com.commentmsg %></span></div>
+                             <div class="col-md-12 time_praise">
+                                 <span class="commentTime"><%= com.time %></span>
+                                 <span class="clickCommentPraise"><i class="fa fa-thumbs-o-up"></i><span class="commentPraiseNum"><%= com.praise %></span></span>
+                             </div>
+                        </div>
+                        <%}%>
+                </div>
+            </div>
+        </div>
+        <script src="/lib/jquery-3.0.0.min.js"></script>
+        <script src="/pages/message/js/comments.js"></script>
+	</body>
+</html>

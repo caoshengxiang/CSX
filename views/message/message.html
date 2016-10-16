@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>-->
+        <title></title>
+        <link rel="shortcut icon" href="/img/favicon.jpg">
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/font-awesome.css"/>
+        <link rel="stylesheet" href="/pages/message/css/message.css" />
+    </head>
+    <body>
+        
+        <div class="container bg">
+            <%- include ../common/header.html%>
+            
+            <div class="postMessage"></div>
+            
+            <div class="turnPageBox" style="text-align: center;">
+                <!--<nav style="text-align: center;">
+                  <ul class="pagination pagination-lg">
+                    <li><a href="#">1/20</a></li>
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">&lsaquo;</a></li>
+                    <li  class="active"><a>1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li class="disabled"><a href="#">...</a></li>
+                    <li><a href="#">18</a></li>
+                    <li><a href="#">19</a></li>
+                    <li><a href="#">20</a></li>
+                    <li><a href="#">&rsaquo;</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                  </ul>
+                </nav>    -->
+            </div>
+            
+            <div class="row leaveMessage">
+                    <div class="col-md-12 col-sm-12 leaveMsgRow">
+                            <form action="/message/send" method="post"  class="contact-form sendForm">
+                                <fieldset class="col-md-4 col-sm-6 col-xs-12">
+                                    <input type="text" id="name" name="name" placeholder="名字...">
+                                </fieldset>
+                                <fieldset class="col-md-4 col-sm-6 col-xs-12">
+                                    <input type="email" id="email" name="email" placeholder="Email...">
+                                </fieldset>
+                                <fieldset class="col-md-4 col-sm-12 col-xs-12">
+                                    <input type="text" id="subject" name="subject" placeholder="主题...">
+                                </fieldset>
+                                <fieldset class="col-md-12 col-sm-12 col-xs-12">
+                                    <textarea name="message" id="message" cols="30" rows="6" placeholder="信息..."></textarea>
+                                </fieldset>
+                                <fieldset class="col-md-12 col-sm-12 col-xs-12">
+                                    <button type="submit" class="button default sendMessage" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="fa fa-send"></i>现在发送</button>
+                                    <div class="formAlert"></div>
+                                </fieldset>
+                            </form>
+                    </div>
+                    
+                </div>
+            </div>
+    </body>
+    <script src="/lib/jquery-3.0.0.min.js"></script>
+    <script src="/pages/common/js/jquery.page.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <script src="/pages/message/js/message.js"></script>
+    <script src="/js/sendmessage.js"></script>
+    
+</html>

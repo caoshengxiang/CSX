@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/pages/common/header.css"/>
+	</head>
+	<body>
+	    <div class="header row">
+                <span class="in-block logo"><img src="/img/favicon.jpg"/><label>Freeboy</label></span>
+                <span class="in-block user-login">
+                    <%if(user){%>
+                        <i class="fa fa-user fa-lg"></i><label><%= user %></user></label>
+                        <a href="/users/logout">退出</a>
+                    <%} else{%>
+                        <a href="/users/login">登录</a>
+                        <span></span>
+                        <a href="/users/register">注册</a>
+                    <%}%>
+                </span>
+                <ul class="in-block nav navbar-nav">
+                    <li class="<%if(navIndex ==1){%> active <%}%>"><a href="/">首页</a></li>
+                    <li class="<%if(navIndex ==2){%> active <%}%>"><a href="/message">留言</a></li>
+                    <li class="<%if(navIndex ==3){%> active <%}%>"><a href="/circle">生活圈</a></li>
+                    <li class="<%if(navIndex ==4){%> active <%}%>"><a href="/blog">BLOG</a></li>
+                </ul>
+                
+            </div>
+	</body>
+</html>

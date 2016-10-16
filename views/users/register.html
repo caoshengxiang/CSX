@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../img/favicon.jpg">
+<link rel="stylesheet" type="text/css" href="../pages/users/login.css">
+</head>
+<body>
+<div class="htmleaf-container">
+    <div class="header">
+        <span class="logo"><img src="../img/favicon.jpg"/><label>Freeboy</label></span>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <h1>欢迎<%= title %></h1>
+            
+            <form class="form" method="post" action="registerTest">
+                <input name="username" class="username" type="text" placeholder="Username">
+                <input name="password" class="password" type="password" placeholder="Password">
+                <input name="confirmPassword" class="confirmPassword" type="password" placeholder="Confirm Password">
+                <button type="submit" id="login-button"><%= title %></button>
+                <div class="tipsMassage"><span class="Msg"><%= tips %></span><a href="/users/loginOrRegister_back">返回</a></div>
+            </form>
+        </div>
+        
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+<script src="../lib/jquery-3.0.0.min.js"></script>
+<script>
+    $('#login-button').click(function (event) {
+        event.preventDefault();
+        var userName = $('.username').val(),
+            password = $('.password').val(),
+            confirmPassword = $('.confirmPassword').val();
+        if(userName && password && confirmPassword){
+            if(password !== confirmPassword){
+                $('.Msg').text("两次输入密码不一致！");
+            } else {
+                $('form').fadeOut(500);
+                $('.wrapper').addClass('form-success');
+                setTimeout(function(){
+                    $('.form').submit();
+                }, 2000);  
+            }
+        } else {
+            $('.Msg').text("用户名或密码不能为空！");
+        }
+    });
+</script>
+</body>
+</html>
