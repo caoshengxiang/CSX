@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>写博客</title>
+		<link rel="shortcut icon" href="/img/favicon.jpg">
+        <link rel="stylesheet" href="/css/font-awesome.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/pages/blog/css/writeBlog.css" />
+        
+	</head>
+	<body>
+	    <% include ../common/header.html%>
+	     
+	    <div class="container">
+	        
+	        <!--<form action="" method="post">
+	            
+	        </form>-->
+	        <div class="page-left">
+	            <ul>
+	                <li>操作</li>
+	                <li><a href="/blog">查看博客</a></li>
+	                 <li><a class="MyBlog" href="javascript:void(0)">我的博文</a></li>
+                    <li><a class="writeBlog" href="javascript:void(0)">写博文</a></li>
+	            </ul>
+	        </div>
+	        <div class="page-right">
+    	        <div>
+    	            <h3>标题</h3>
+    	           <input type="text" name="blogTitle" id="blogTitle" value="" placeholder="输入标题"/>
+    	        </div>
+    	        <div>
+    	            <h3>标签</h3>
+    	            <div id="blogTag"></div>
+    	        </div>
+    	        <div>
+    	            <h3>内容</h3>
+    	           <script id="editor" type="text/plain"></script>
+    	        </div>
+    	        <div>
+    	            <input type="button" id="btnBlog" value="发布博客"/>
+    	            <input type="checkbox" name="secrecyState" id="secrecyState"/><label class="secrecyStateText">不公开</label>
+    	        </div>    
+	        </div>
+	        
+	    </div>
+	</body>
+	<script src="/lib/jquery-3.0.0.min.js"></script>
+	
+	<script type="text/javascript" charset="utf-8" src="/lib/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/lib/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
+    
+    <!-- 引入标签插件 -->
+    <script src="/pages/common/js/jquery.tabControl.js"></script>
+    
+    <script src="/pages/blog/js/writeBlog.js"></script>
+</html>

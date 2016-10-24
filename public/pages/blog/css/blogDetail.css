@@ -1,0 +1,48 @@
+.container {
+  margin-top: 70px;
+}
+.container .page-left {
+  border: 1px solid #dfdfdf;
+  float: left;
+  width: 15%;
+  margin-right: 2%;
+}
+.container .page-left ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  font-family: "微软雅黑";
+  font-size: 14px;
+}
+.container .page-left ul li {
+  margin: 10px 5px;
+}
+.container .page-left ul li:first-of-type {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background: #dfdfdf;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.container .page-right {
+  border: 1px solid #dfdfdf;
+  float: left;
+  width: 83%;
+  padding: 20px;
+}
+.container .page-right .title h3 {
+  color: blue;
+  font-weight: bold;
+}
+.container .page-right .tags {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 10px 0;
+}
+.container .page-right .tags .time {
+  margin-left: 30px;
+}
+.container .page-right .Article {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=blogDetail.css.map */

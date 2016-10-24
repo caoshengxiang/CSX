@@ -29,9 +29,9 @@ npm install -production 安装dependences的依赖<br>
 
 ### .gitignore文件忽略上传文件
 ```
-.project  <br>
- node_modules  <br>
- bin  <br>
+.project
+ node_modules
+ bin
 ``` 
 
 ### package.json修改说明

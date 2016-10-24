@@ -23,6 +23,10 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').__express);//添加的，模板用html
 app.set('view engine', 'html');
+/*app.set("view options",{  //<%%> 改为使用{{}}
+   "open":"{{",  
+   "close":"}}"  
+}); */
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -36,7 +40,7 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
     cookie: {
-        maxAge: 1000*60*10
+        maxAge: 1000*60*40
     }
 }));
 app.use(function(req, res, next){

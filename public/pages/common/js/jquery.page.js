@@ -49,8 +49,8 @@
                     str += '<li class="disabled"><a>'+ this.page + '/' + this.pageCount +'</a></li>';
                     
                     if(this.page == 1) {
-                        str += '<li class="disabled"><a href="#">&laquo</a></li>'+
-                                '<li class="disabled"><a href="#">&lsaquo;</a></li>';
+                        str += '<li class="disabled"><a>&laquo</a></li>'+
+                                '<li class="disabled"><a>&lsaquo;</a></li>';
                     } else {
                         str += '<li><a href="#">&laquo;</a></li>'+
                                 '<li><a href="#">&lsaquo;</a></li>';
@@ -59,7 +59,7 @@
                         str += '<li><a href="#">1</a></li>';
                     }
                     if(this.page >= 5) {
-                        str += '<li class="disabled"><a href="#">...</a></li>';
+                        str += '<li class="disabled"><a href="javascript:void(0)">...</a></li>';
                     }
                     var startP = (this.page - 2) <= 0 ? 1 : (this.page - 2),
                         endP = (this.page + 2) > this.pageCount ? this.pageCount : (this.page + 2);
@@ -74,14 +74,14 @@
                         }
                     }
                     if( this.page + 3 < this.pageCount){
-                        str += '<li class="disabled"><a href="#">...</a></li>';
+                        str += '<li class="disabled"><a href="javascript:void(0)">...</a></li>';
                     }
                     if( this.page != this.pageCount ){
                         str += '<li><a href="#">'+ this.pageCount +'</a></li>';
                     }
                     if(this.page == this.pageCount) {
-                        str += '<li class="disabled"><a href="#">&rsaquo;</a></li>'+
-                                '<li class="disabled"><a href="#">&raquo;</a></li>';
+                        str += '<li class="disabled"><a>&rsaquo;</a></li>'+
+                                '<li class="disabled"><a>&raquo;</a></li>';
                     } else {
                         str += '<li><a href="#">&rsaquo;</a></li>'+
                                '<li><a href="#">&raquo;</a></li>';
@@ -134,8 +134,8 @@
                                 msgNum: op.msgNum
                             },
                             success: function(data) {
-                                pageSelf.showMessagePage(data);
                                 pageSelf.turnTo(index);
+                                pageSelf.showMessagePage(data);
                                 console.log(data.length);
                             },
                             error: function(){
@@ -148,8 +148,11 @@
             Page.prototype.showMessagePage = function(data) {
                 var el = $(op.msgel),
                     str ='',
-                    len = data.length;
-                    for(var i = len -1; i >= 0; i--){
+                    len = op.msgNum;
+                    if(this.page == this.pageCount){
+                        len = op.msgCount - (op.pageCount-1) * op.msgNum;
+                    }
+                    for(var i = 0; i < len; i++){
                         if(data[i].type === 1){
                            if(data[i].subject && data[i].message && data[i].name && data[i].email && data[i].time){
                                 str += '<div class="row messageItem" data-id="'+data[i]._id+'">'+
@@ -217,9 +220,9 @@
                         msgNum: op.msgNum
                     },
                     success: function(data) {
-                        pageSelf.showMessagePage(data);
                         pageSelf.turnTo(1);
-                        console.log(data.length);
+                        pageSelf.showMessagePage(data);
+                       
                     },
                     error: function(){
                         console.log("err");

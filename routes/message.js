@@ -60,7 +60,6 @@ router.get('/praise', function(req, res, next){//点赞
         
         res.send({praise: praiseNum});
         
-        //console.log(praiseNum);
         msg.model.update(
             {_id: dataId},
             {$set: {praise: praiseNum}}, 
@@ -101,7 +100,7 @@ router.get('/comments/:msgid', function(req, res, next) {//评论
                 theMsg: result[0],
                 navIndex: 2
             }
-            console.log(data);
+            
             res.render('message/comments', data);
         });    
     }

@@ -1,0 +1,41 @@
+.container {
+  margin-top: 70px;
+  font-family: "微软雅黑";
+}
+.container .page-left {
+  border: 1px solid #eee;
+  float: left;
+  width: 15%;
+  margin-right: 2%;
+}
+.container .page-left ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container .page-left ul li {
+  margin: 10px 5px;
+}
+.container .page-left ul li:first-of-type {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background: #dfdfdf;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.container .page-right {
+  border: 1px solid #eee;
+  float: left;
+  width: 83%;
+  padding: 5px;
+}
+.container .page-right .blogList ul {
+  list-style-type: none;
+}
+.container .page-right .blogList ul li .tags span {
+  margin-left: 10px;
+  border: 1px solid #aaaaab;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=blog.css.map */

@@ -1,0 +1,95 @@
+.container {
+  margin-top: 70px;
+  font-family: "微软雅黑";
+}
+.container .page-left {
+  border: 1px solid #dfdfdf;
+  float: left;
+  width: 15%;
+  margin-right: 2%;
+}
+.container .page-left ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container .page-left ul li {
+  margin: 10px 5px;
+}
+.container .page-left ul li:first-of-type {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background: #dfdfdf;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.container .page-right {
+  border: 1px solid #dfdfdf;
+  float: left;
+  width: 83%;
+  padding: 5px;
+}
+.container .page-right #blogTitle {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #dfdfdf;
+}
+.container .page-right #blogTag {
+  border: 1px solid #dfdfdf;
+  padding: 10px 10px;
+}
+.container .page-right #blogTag div.radius_shadow {
+  border: 1px solid #DBDBDB;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 10px #414141;
+  -moz-box-shadow: 0 0 10px #414141;
+  box-shadow: 0 0 10px #414141;
+  font-size: 12px;
+  background: #fff;
+}
+.container .page-right #blogTag span#radius {
+  display: inline-block;
+  float: none;
+  font-size: 12px;
+  padding: 2px 5px;
+  margin-right: 10px;
+  border: 1px solid #E0E0E0;
+  background-color: #F0F0F0;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #000;
+}
+.container .page-right #blogTag .tabinput {
+  margin-left: 5px;
+  border: 0;
+}
+.container .page-right #blogTag a#deltab {
+  cursor: pointer;
+  display: inline-block;
+  color: #808080;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.container .page-right #blogTag a#deltab:hover {
+  color: #D2D2D2;
+  text-decoration: none;
+}
+.container .page-right #editor {
+  width: 100%;
+}
+.container .page-right #btnBlog {
+  padding: 5px 8px;
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.container .page-right .secrecyStateText {
+  margin-left: 6px;
+}
+/*# sourceMappingURL=writeBlog.css.map */

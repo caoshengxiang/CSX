@@ -4,10 +4,44 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="shortcut icon" href="/img/favicon.jpg">
-		<link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/font-awesome.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/pages/blog/css/blog.css"/>
 	</head>
 	<body>
 	    <% include ../common/header.html%>
+	    
+	    <div class="container">
+            
+            <!--<form action="" method="post">
+                
+            </form>-->
+            <div class="page-left">
+                <ul>
+                    <li>操作</li>
+                    <li><a href="/blog">查看博客</a></li>
+                    <li><a class="MyBlog" href="javascript:void(0)">我的博文</a></li>
+                    <li><a class="writeBlog" href="javascript:void(0)">写博文</a></li>
+                </ul>
+            </div>
+            <div class="page-right">
+                    <div class="blogList">
+                        <ul><% for(var i = 0; i < data.length; i++) {%>
+                        	<li data-id = "<%= data[i]._id %>">
+                        	    <h3><a href="/blog/blogDetail/<%= data[i]._id %>"><%= data[i].title %></a></h3>
+                        	    <div class="tags"><label>标签:</label>
+                        	        <% for(var j = 0; j < data[i].tags.length; j++){ %>
+                        	        <span><%= data[i].tags[j] %></span>
+                        	        <% } %>
+                        	    </div>
+                        	</li>
+                        	<%}%>
+                        </ul>
+                    </div>
+            </div>
+            
+        </div>
 	</body>
+	<script src="/lib/jquery-3.0.0.min.js"></script>
+    <script src="/pages/blog/js/blog.js"></script>
 </html>

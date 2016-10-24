@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="shortcut icon" href="/img/favicon.jpg">
+        <link rel="stylesheet" href="/css/font-awesome.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/pages/blog/css/blogDetail.css"/>
+	</head>
+	<body>
+	    <% include ../common/header.html%>
+	    
+	    <div class="container">
+	        <div class="page-left">
+                <ul>
+                    <li>操作</li>
+                    <li><a href="/blog">查看博客</a></li>
+                     <li><a class="MyBlog" href="javascript:void(0)">我的博文</a></li>
+                    <li><a class="writeBlog" href="javascript:void(0)">写博文</a></li>
+                </ul>
+            </div>
+            <div class="page-right">
+    	        <div class="title"><h3><%= data[0].title %></h3></div>
+    	        <div class="tags"><label>标签：</label>
+    	            <% for(var i = 0; i < data[0].tags.length; i++) {%>
+    	            <a><span><%= data[0].tags[i] %></span></a>
+    	            <% } %>
+    	            <label class="time">作者：</label><span><%= data[0].username %></span>
+    	            <label class="time">发布时间：</label><span><%= data[0].time %></span>
+    	        </div>
+    	        <div class="Article"><%- data[0].html %></div>
+	        </div>
+	    </div>
+	</body>
+	<script src="/lib/jquery-3.0.0.min.js"></script>
+    <script src="/pages/blog/js/blogDetail.js"></script>
+</html>
